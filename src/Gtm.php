@@ -41,6 +41,7 @@ class Gtm {
 		$output = "<!-- Google Tag Manager (noscript) -->";
 		$output .= sprintf("<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=%s' height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>", $container_id);
 		$output .= "<!-- End Google Tag Manager (noscript) -->";
+		echo $output;
 	}
-	
+
 }
