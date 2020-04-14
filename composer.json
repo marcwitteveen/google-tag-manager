@@ -1,17 +1,17 @@
 {
-    "name": "marcwitteveen/google-tag-manager.php",
+    "name": "marcwitteveen/google-tag-manager",
     "description": "Simple PHP helper functions for implementing Google Tag Manager within your website.",
     "keywords": ["google tag manager","gtm","google analytics"],
-    "homepage": "https://github.com/marcwitteveen/google-tag-manager-php",
+    "homepage": "https://github.com/marcwitteveen/google-tag-manager/p",
     "license": "MIT",
     "authors": [
         {
             "name": "Marc Witteveen",
             "email": "marc.witteveen@gmail.com",
             "homepage": "https://marcwitteveen.com",
-            "role": "Owner"
         }
     ],
+    "minimum-stability": "dev-master",
     "require": {
         "php": ">=5.3.0"
     },
