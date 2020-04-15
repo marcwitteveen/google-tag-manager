@@ -1,4 +1,4 @@
-# google-tag-manager-php
+# google-tag-manager
 This class provides some simple PHP helper functions for implementing Google Tag Manager within your website.
 
 ## Getting Started
