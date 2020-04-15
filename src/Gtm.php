@@ -24,9 +24,9 @@ class Gtm {
 	 */
 	public static function renderHeadTag($container_id = "")
 	{
-		$output = "<!-- Google Tag Manager -->";
-		$output .= sprintf("<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','%s');</script>", $container_id);
-		$output .= "<!-- End Google Tag Manager -->";
+		$output = "<!-- Google Tag Manager -->\r\n";
+		$output .= sprintf("<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','%s');</script>\r\n", $container_id);
+		$output .= "<!-- End Google Tag Manager -->\r\n";
 		echo $output;
 	}
 
@@ -38,9 +38,9 @@ class Gtm {
 	 */
 	public static function renderBodyTag($container_id = "")
 	{
-		$output = "<!-- Google Tag Manager (noscript) -->";
-		$output .= sprintf("<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=%s' height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>", $container_id);
-		$output .= "<!-- End Google Tag Manager (noscript) -->";
+		$output = "<!-- Google Tag Manager (noscript) -->\r\n";
+		$output .= sprintf("<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=%s' height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>\r\n", $container_id);
+		$output .= "<!-- End Google Tag Manager (noscript) -->\r\n";
 		echo $output;
 	}
 
