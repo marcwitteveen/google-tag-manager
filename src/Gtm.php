@@ -36,7 +36,7 @@ class Gtm {
 	 * @param string $container_id The Google Tag Manager Container ID
 	 * @return string The generated HTML code
 	 */
-	public function renderBodyTag($container_id = "")
+	public static function renderBodyTag($container_id = "")
 	{
 		$output = "<!-- Google Tag Manager (noscript) -->";
 		$output .= sprintf("<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=%s' height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>", $container_id);
